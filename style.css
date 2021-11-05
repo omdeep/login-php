@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #505962;
-  background-image: url("img/snake.jpg"); 
+  background-image: url("img/snake.jpg");
 }
 
 
@@ -64,12 +64,38 @@ footer h3 {
   margin: 150px auto;
 }
 
-.register-box{
-background: rgba (211,211,211,0.5);
-padding: 30px ;
+.register-box {
+  background: rgba (211, 211, 211, 0.5);
+  padding: 30px;
 }
 
 .form-control {
-          background-color: white !important;
+  background-color: white !important;
 
-  }
+}
+
+.jumbo-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.three-col {
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  height: 62vh;
+
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.game-size {
+  padding-top: 30px;
+  width: 80%;
+  height: auto;
+}

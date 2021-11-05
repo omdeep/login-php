@@ -1,50 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
 
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Login</title>
-    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
+ //Include the PHP functions to be used on the page 
+include('common.php'); 
+//Output header and navigation 
+outputHeader("Snake Game - Login");
+outputBannerNavigation("Login");
 
-<body>
-    <!--- Navigation -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.php"><img src="img/bootstrap.png"></a> <button class="navbar-toggler"
-                data-target="#navbarResponsive" data-toggle="collapse" type="button"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="register.php">Register</a>
-                    </li>
-                    <!-- <li class="nav-item">
-						<a class="nav-link" href="portfolio.php">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="pricing.php">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="team.php">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact-us.php">Contact Us</a>
-					</li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--- End Navigation -->
+?>
 
-    <div class="container">
-        <div class="login-box">
-            <div class="row">
-                <div class="col-md-6 register-box">
-                    <h3>Do you want to play ? Please Login Here !!</h3>
-                    <form action="validation.php" method="post">
+<div class="container">
+    <div class="login-box">
+        <div class="row">
+            <img class="jumbo-img" src="img/battle.png">
+            <div class="col-md-6 register-box">
+                <h3>Do you want to play ? Please Login Here !!</h3>
+                <form action="validation.php" method="post">
                     <div class="form-group">
                         <label>
                             Username
@@ -60,22 +31,25 @@
                     <button type="submit" class="btn btn-primary">Login</button>
                     <br>
                     <a href="register.php">Not a member yet ?? Please Register Here</a>
-                    </form>
-                </div>
+                </form>
             </div>
+
+
+
         </div>
     </div>
+</div>
 
 
 
 
+<?php  outputFooter(); ?>
 
 
 
-
-    <!--- Script Source Files -->
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <!--- End of Script Source Files -->
+<!--- Script Source Files -->
+<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<!--- End of Script Source Files -->
 
 </body>
 

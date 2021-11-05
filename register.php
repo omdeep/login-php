@@ -1,47 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
 
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>Registration</title>
-	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-</head>
+ //Include the PHP functions to be used on the page 
+include('common.php'); 
+//Output header and navigation 
+outputHeader("Snake Game - Register");
+outputBannerNavigation("Register");
 
-<body>
-	<!--- Navigation -->
-	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="login.php"><img src="img/bootstrap.png"></a> <button class="navbar-toggler"
-				data-target="#navbarResponsive" data-toggle="collapse" type="button"><span
-					class="navbar-toggler-icon"></span></button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link active" href="login.php">Login</a>
-					</li>
-					<!-- <li class="nav-item">
-						<a class="nav-link" href="portfolio.php">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="pricing.php">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="team.php">Team</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact-us.php">Contact Us</a>
-					</li> -->
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!--- End Navigation -->
+?>
 
 	<div class="container">
 		<div class="login-box">
 			<div class="row">
+			<img class="jumbo-img" src="img/strike.jpg">
 				<div class="col-md-6 register-box">
 					<h3>Do you want to play ? Please Register Here !!</h3>
 					<form action="registration.php" method="post">
@@ -69,7 +40,7 @@
 
 
 
-
+	<?php  outputFooter(); ?>
 
 
 
